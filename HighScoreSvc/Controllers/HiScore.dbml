@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbh-test" Class="HiScoreDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DH-WORK-MAC-WIN\SQLEXPRESS;Initial Catalog=dbh-test;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="dbh_testConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HiScores" Member="HiScores">
+    <Type Name="HiScore">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(16) NOT NULL" CanBeNull="false" />
+      <Column Name="score" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
